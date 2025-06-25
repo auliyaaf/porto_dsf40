@@ -10,23 +10,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="section1">
-      <div class="cover">
-        <h2>Uncover My Creations</h2>
-        <h1 class="desktop">PORT<br />FOLIO</h1>
+    <section class="hero">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#profile-section">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay-text">
+        <p class="tagline">Uncover My Creations</p>
+        <h1 class="title">PORT<br />FOLIO</h1>
+        <div class="credit-badge">built by iza</div>
       </div>
     </section>
-    <section class="profile-section">
+   <section class="pattern"></section>
+    
+ <section id="profile-section" class="profile-section">
+     
+      </div>
       <div class="profile-img">
         <img src="./image/profile.png" alt="Your Photo" />
       </div>
       <div class="profile-text">
-        <h2>Me, Myself, and I</h2>
+        <h2>Hello, I'm Iza</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          A graphic designer with 5 years of freelance experience and a deep love for visual storytelling. My creative journey started with a passion for art, and it has grown into a continuous practice of design exploration and problem-solving. Over the years, I’ve specialized in logo design and learned the importance of understanding client briefs, adapting to feedback, and turning ideas into visuals that truly speak. <br/><br/> Now, as a computer science graduate, I’m expanding my creative skillset into front-end web development — where design meets function. With a growing understanding of HTML, CSS, and JavaScript, I’m blending my design eye with responsive, user-focused development. I believe good design is not only aesthetic but also communicates, adapts, and connects. <br/><br/>Curious, adaptable, and committed to growth — I’m always open to new challenges, fueled by research and driven by the desire to make every visual meaningful.
         </p>
         <div class="skills">
           <div class="skill-tag">Adobe Illustrator</div>
@@ -36,57 +46,67 @@
       </div>
     </section>
 
-    <!-- <section class="section3">
-      <div class="sub-title">
-        <h1>My Recently Project</h1>
-      </div>
-    </section> -->
-    <section class="nutrifuse-container">
+
+    <section id="projects" class="nutrifuse-container">
       <div class="nutrifuse-text">
         <h2>Nutrifuse</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Nutrifuse is a cold-pressed juice brand based in Magelang, Indonesia, offering pure fruit extracts without added water or preservatives. <br/><br/> Available in three refreshing variants — Scarlet, Greenish, and Sunset — Nutrifuse is best enjoyed chilled for maximum flavor. The brand features a lettermark logo combining the initials N and F, enhanced with a green color palette that symbolizes freshness and nature.
         </p>
         <button
           onclick="window.location.href='https://www.instagram.com/nutrifuse__';"
         >
-          Check It Close
+          Explore now
         </button>
       </div>
       <div class="nutrifuse-image">
-        <img src="./image/nutrifuse1.jpg" alt="Nutrifuse Product" />
+        <img src="./image/nutrifuse1.jpg" alt="Nutrifuse Product"  class="nutrifuse-image-responsive"/>
       </div>
     </section>
 
-    <section class="project-collection">
-      <h2>My Project Collection</h2>
-      <div class="project-gallery">
-        <div class="project-item">
-          <img src="./image/getaglow.jpg" alt="Project 1" />
-        </div>
-        <div class="project-item">
-          <img src="./image/kelastahsin.jpg" alt="Project 2" />
-        </div>
-        <div class="project-item">
-          <img src="./image/mizan.png" alt="Project 3" />
-        </div>
-        <div class="project-item">
-          <img src="./image/ballon.jpg" alt="Project 4" />
-        </div>
+<section class="project-collection">
+  <h2>My Project Collection</h2>
+  <div class="project-gallery">
+    <div class="project-item" data-img="getaglow.jpg" data-desc="Logo Design">
+      <img src="./image/getaglow.jpg" alt="Botol Produk" />
+      <div class="project-desc">
+        <h1>Getaglow Skincare</h1>
+        <p>Logo Design</p>
       </div>
-    </section>
-
-    <div class="lightbox" id="lightbox">
-      <img src="" alt="Preview" />
     </div>
+    <div class="project-item" data-img="kelastahsin.jpg" data-desc="Logo Design">
+      <img src="./image/kelastahsin.jpg" alt="Tote Bag" />
+      <div class="project-desc">
+        <h1>Kelas Tahsin</h1>
+        <p>Logo Design</p>
+      </div>
+    </div>
+    <div class="project-item" data-img="mizan.png" data-desc="UI Kit">
+      <img src="./image/mizan.png" alt="App UI" />
+      <div class="project-desc">
+          <h1>Mizan Store</h1>
+        <p>Mobile UI Kit</p>
+      </div>
+    </div>
+    <div class="project-item" data-img="ballon.jpg" data-desc="Logo Design">
+      <img src="./image/ballon.jpg" alt="Gallery Sign" />
+            <div class="project-desc">
+        <h1>My Balloon Land</h1>
+        <p>Logo Design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-desc"></p>
+  </div>
+</div>
 
     <footer class="footer">
-      <div class="feedback">
+      <div id="contact" class="feedback">
         <p>Your feedback helps me improve — tell me what you think</p>
         <form
           action="rauliyafaizah@gmail.com"
